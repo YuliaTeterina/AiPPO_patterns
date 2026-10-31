@@ -3,13 +3,13 @@ package com.example;
 import java.util.HashMap;
 import java.util.Map;
 
-// Структурный паттерн Proxy (Заместитель)
-// 1. Интерфейс (совпадает с именем файла)
+// Структурный паттерн Proxy
+// 1. Интерфейс
 public interface Recipe {
     String getDetails();
 }
 
-// 2. Реальный объект (тяжелый запрос к БД) - без public
+// 2. Реальный объект (запрос к БД)
 class RealRecipe implements Recipe {
     private int recipeId;
 
@@ -24,7 +24,7 @@ class RealRecipe implements Recipe {
     }
 }
 
-// 3. Прокси с кэшем (без public)
+// 3. Прокси с кэшем
 class RecipeProxy implements Recipe {
     private static Map<Integer, String> cache = new HashMap<>();
     private int recipeId;

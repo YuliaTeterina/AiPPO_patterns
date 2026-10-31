@@ -1,12 +1,12 @@
 package com.example;
 
-// Порождающий паттерн Factory Method (Фабричный метод)
-// 1. Интерфейс продукта (совпадает с именем файла)
+// Порождающий паттерн Factory Method
+// 1. Интерфейс продукта
 public interface PaymentProcessor {
     void processPayment(double amount);
 }
 
-// 2. Конкретные реализации (без слова public)
+// 2. Конкретные реализации
 class CardPayment implements PaymentProcessor {
     @Override
     public void processPayment(double amount) {

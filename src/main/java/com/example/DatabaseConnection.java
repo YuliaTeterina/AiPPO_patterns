@@ -1,12 +1,11 @@
 package com.example;
 
-// Порождающий паттерн Singleton (Одиночка)
+// Порождающий паттерн Singleton
 public class DatabaseConnection {
-    // Единственный экземпляр класса
+
     private static DatabaseConnection instance;
     private String connectionStatus;
 
-    // Приватный конструктор, чтобы нельзя было создать через new
     private DatabaseConnection() {
         this.connectionStatus = "Подключено к БД каталога";
     }

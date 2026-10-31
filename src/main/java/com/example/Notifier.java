@@ -1,12 +1,12 @@
 package com.example;
 
-// Структурный паттерн Adapter (Адаптер)
-// 1. Целевой интерфейс (совпадает с именем файла)
+// Структурный паттерн Adapter
+// 1. Целевой интерфейс
 public interface Notifier {
     void sendMessage(String text);
 }
 
-// 2. Сторонние классы с несовместимыми интерфейсами (без public)
+// 2. Сторонние классы с несовместимыми интерфейсами
 class TelegramAPI {
     public void sendTelegramMsg(String chatId, String msg) {
         System.out.println("Telegram [chat:" + chatId + "]: " + msg);
@@ -19,7 +19,7 @@ class SmsGatewayAPI {
     }
 }
 
-// 3. Адаптеры (без public)
+// 3. Адаптеры
 class TelegramAdapter implements Notifier {
     private TelegramAPI api;
     private String chatId;

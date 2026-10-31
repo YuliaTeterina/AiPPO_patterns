@@ -1,6 +1,6 @@
 package com.example;
 
-// Структурный паттерн Facade (Фасад)
+// Структурный паттерн Facade
 
 // 1. Внутренние сервисы
 // Этот класс просто имитирует проверку ингредиентов
@@ -24,7 +24,7 @@ class OrderService {
     }
 }
 
-// 2. Сам фасад (совпадает с именем файла OrderFacade.java)
+// 2. Сам фасад
 public class OrderFacade {
     public void makeOrder() {
         System.out.println("--- Начинаем оформление заказа ---");

@@ -11,11 +11,11 @@ public class Main {
             System.out.println("\n=========================================");
             System.out.println("   ТЕСТИРОВАНИЕ ПАТТЕРНОВ ПРОЕКТИРОВАНИЯ");
             System.out.println("=========================================");
-            System.out.println("1. Запустить Singleton (Одиночка)");
-            System.out.println("2. Запустить Factory Method (Фабричный метод)");
-            System.out.println("3. Запустить Adapter (Адаптер)");
-            System.out.println("4. Запустить Facade (Фасад)");
-            System.out.println("5. Запустить Proxy (Заместитель)");
+            System.out.println("1. Запустить Singleton");
+            System.out.println("2. Запустить Factory Method");
+            System.out.println("3. Запустить Adapter");
+            System.out.println("4. Запустить Facade");
+            System.out.println("5. Запустить Proxy");
             System.out.println("0. Выход");
             System.out.print("Выберите пункт (0-5): ");
 
